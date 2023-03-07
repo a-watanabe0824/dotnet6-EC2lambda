@@ -41,7 +41,7 @@ namespace C_DotNetCore_Launch_EC2.Functions
 
             Console.WriteLine("\nNo more instances are pending.");
 
-            var ListEC2States = new List<string>();
+            var　EC2States = new List<string>();
             for (int i = 0; i < responseDescribe.Reservations.Count; i++)
             {
                 foreach (Instance z in responseDescribe.Reservations[i].Instances)
@@ -62,11 +62,11 @@ namespace C_DotNetCore_Launch_EC2.Functions
                                    "Status" + ":" + $"{z.State.Name}" + "\n" +
                                     "Public Ip" + ":" + $"{z.PublicIpAddress}";
                     Console.WriteLine(str);
-                    ListEC2States.Add(str);
+                    EC2States.Add(str);
                 }
             }
 
-            await Slack.PostToSlackChannel(ListEC2States, "Status", "All");
+            await Slack.PostToSlackChannel(EC2States, "Status", "All");
         }
     }
 }
