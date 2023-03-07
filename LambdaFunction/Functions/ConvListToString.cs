@@ -2,17 +2,17 @@
 {
     public class T01
     {
-        public static string ConvListToString(List<string> iList, string iKugiri = "\r\n")
+        public static string ConvListToString(List<string> strList)
         {
 
             string str1 = String.Empty;
 
             try
             {
-                if (iList.Count > 0)
+                if (strList.Count > 0)
                 {
                     for (int i = 0; i < iList.Count; i++)
-                        str1 += iList[i] + iKugiri;
+                        str1 += strList[i] + "\r\n";
                 }
 
                 return str1;
