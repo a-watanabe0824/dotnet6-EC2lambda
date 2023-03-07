@@ -12,8 +12,8 @@ namespace C_DotNetCore_Launch_EC2.Functions
         /// <returns></returns>
         public static async Task CheckState(IAmazonEC2 ec2Client, List<string> instanceIds)
         {
-            string MaineGroupEC2ID_01 = Property.EC2ID_01;
-            string MaineGroupEC2ID_02 = Property.EC2ID_02;
+            string EC2ID_01 = Property.EC2ID_01;
+            string EC2ID_02 = Property.EC2ID_02;
             int numberRunning;
             DescribeInstancesResponse responseDescribe;
             var requestDescribe = new DescribeInstancesRequest
@@ -47,7 +47,7 @@ namespace C_DotNetCore_Launch_EC2.Functions
                 foreach (Instance z in responseDescribe.Reservations[i].Instances)
                 {
                     var Group = "";
-                    if (MaineGroupEC2ID_01 == z.InstanceId || MaineGroupEC2ID_02 == z.InstanceId)
+                    if (EC2ID_01 == z.InstanceId || EC2ID_02 == z.InstanceId)
                     {
                         Group = "Main";
                     }
@@ -66,7 +66,7 @@ namespace C_DotNetCore_Launch_EC2.Functions
                 }
             }
 
-            await Slack.PostToSlackChannel(EC2States, "Status", "All");
+            await Slack.PostToSlackChannel(E2States, "Status", "All");
         }
     }
 }
