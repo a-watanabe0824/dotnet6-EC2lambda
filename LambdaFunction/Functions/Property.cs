@@ -39,7 +39,7 @@ namespace C_DotNetCore_Launch_EC2
         {
             get
             {
-                return $"{Environment.GetEnvironmentVariable(" WebHook_Url")}";
+                return $"{Environment.GetEnvironmentVariable("WebHook_Url")}";
             }
         }
     }
