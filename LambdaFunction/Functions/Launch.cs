@@ -1,3 +1,4 @@
+
 ﻿using Amazon.EC2;
 using Amazon.EC2.Model;
 
@@ -24,3 +25,8 @@ namespace C_DotNetCore_Launch_EC2.Functions
         }
     }
 }
+
+﻿v//vlcklk
+
+
+あああてすと

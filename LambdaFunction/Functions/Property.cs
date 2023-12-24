@@ -20,6 +20,11 @@ namespace C_DotNetCore_Launch_EC2
             }
         }
 
+
+
+        kcxこkcぉ
+        
+
         public static string EC2ID_03
         {
             get
