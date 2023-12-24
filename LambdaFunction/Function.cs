@@ -13,7 +13,7 @@ public class Function
         var client = new AmazonEC2Client();
         List<string> Ids = new List<string>();
 
-        var str = model.Group;
+        var str = model.Group;fx;f]:;]f:x;]:;
 
         if (model.Action != "Status")
         {
