@@ -20,7 +20,7 @@ public class Function
             if (str == "Sub")
             {
                 Ids = new List<string>
-                {
+                {cx:];:]c;x]:;cx
                    Property.EC2ID_01,
                    Property.EC2ID_02
                 };
