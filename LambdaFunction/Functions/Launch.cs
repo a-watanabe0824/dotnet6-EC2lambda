@@ -14,7 +14,7 @@ namespace C_DotNetCore_Launch_EC2.Functions
         public static async Task LaunchEC2(IAmazonEC2 ec2Client, List<string> instanceId, string group)
         {
             var result = await ec2Client.StartInstancesAsync(new StartInstancesRequest(instanceId));
-            var strlist = new List<string>();
+            var strlist =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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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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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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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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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 new List<string>();
             foreach (var si in result.StartingInstances)
             {
                 var str = $"{si.CurrentState.Name}" + ":" + $"{si.InstanceId}";
