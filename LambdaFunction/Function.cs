@@ -13,10 +13,11 @@ public class Function
         var client = new AmazonEC2Client();
         List<string> Ids = new List<string>();
 
-        var str = model.Group;xzxzl;Lambda
+        var str = model.Group;fx;f]:;]f:x;]:;
+
 
         if (model.Action != "Status")
-        {
+        {cx;c:lx;lc:;x
             if (str == "Sub")d;sl;ld;sl:;s]
             {
                 Ids = new List<string>
@@ -24,7 +25,7 @@ public class Function
                    Property.EC2ID_01,
                    Property.EC2ID_02
                 };
-            }
+            }dl;l;:dls:;l;:dlsdsl;
             else if (str == "Main")
             {
                 Ids = new List<string>
