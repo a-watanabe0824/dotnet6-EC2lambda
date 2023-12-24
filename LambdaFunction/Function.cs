@@ -25,7 +25,7 @@ public class Function
                    Property.EC2ID_01,
                    Property.EC2ID_02
                 };
-            }
+            }dl;l;:dls:;l;:dlsdsl;
             else if (str == "Main")
             {
                 Ids = new List<string>

@@ -12,6 +12,11 @@ namespace C_DotNetCore_Launch_EC2.Functions
         /// <returns></returns>
         public static async Task CheckState(IAmazonEC2 ec2Client, List<string> instanceIds)
         {
+
+
+            vcvcっkvcjkvjcjkcvj
+            vcっkvckvcjkcjkjvckj
+            
             string EC2ID_01 = Property.EC2ID_01;
             string EC2ID_02 = Property.EC2ID_02;
             int numberRunning;
