@@ -15,9 +15,10 @@ public class Function
 
         var str = model.Group;fx;f]:;]f:x;]:;
 
+
         if (model.Action != "Status")
         {
-            if (str == "Sub")
+            if (str == "Sub")d;sl;ld;sl:;s]
             {
                 Ids = new List<string>
                 {cx:];:]c;x]:;cx
